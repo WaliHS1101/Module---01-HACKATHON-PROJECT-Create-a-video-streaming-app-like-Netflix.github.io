@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.329)), url(img/main.bmp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            width: 130px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        .head-main li {
+            list-style: none;
+        }
+
+        .SignIn {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+        }
+
+        .SignIn-Form {
+            padding: 50px;
+            margin-top: 20px;
+            grid-column: 4/5;
+            background-color: rgba(0, 0, 0, 0.849);
+        }
+
+        .SignIn-input {
+            display: flex;
+            margin-top: 30px;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            padding-left: 20px;
+        }
+
+        .SignIn-btn {
+            margin-top: 50px;
+            width: 100%;
+            height: 50px;
+        }
+
+        .SignIn-Help {
+            display: flex;
+            color: rgb(131, 131, 131);
+        }
+
+        .Help-p {
+            flex: 1;
+        }
+
+        .Help-a {
+            color: rgb(131, 131, 131);
+            text-decoration: none;
+            font-size: small;
+        }
+
+        .SignUpNew-p {
+            color: rgb(131, 131, 131);
+        }
+
+        .SignUpNew-a {
+            color: white;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .SignIn-footer {
+            height: 200px;
+            width: 100%;
+            margin-top: 7.7%;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.685);
+            color: rgb(131, 131, 131);
+        }
+
+        .SignIn-info-ul {
+            list-style: none;
+        }
+
+        .SignIn-info-ul li {
+            margin-bottom: 20px;
+            font-size: small;
+        }
+
+        .SignIn-info-ul a {
+            text-decoration: none;
+            color: rgb(131, 131, 131);
+        }
+
+        .SignIn-info-ul a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="head-main">
+        <ul>
+            <li class="li-logo">
+                <a href="index.html">
+                    <img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png"
+                        alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container SignIn">
+        <div class="SignIn-Form text-light ">
+
+            <h1 class="SignIn-h1 h2">Sign In</h1>
+
+            <input type="Email" class="SignIn-input bg-dark text-light" id="SignIn-email" placeholder="Email">
+
+            <input type="Password" class="SignIn-input bg-dark text-light" id="SignIn-password" placeholder="Password">
+
+            <button class="SignIn-btn btn btn-danger" onclick="SignInbtn()">Sign in</button>
+
+            <div class="SignIn-Help d-flex mt-1">
+
+                <input class="Help-input" type="checkbox">
+
+                <p class="Help-p mt-2 m-2">Remember me</p>
+
+                <a href="" class="Help-a m-2">Need help?</a>
+
+            </div>
+
+            <div class="SignUp-paga mt-5 d-flex">
+                <p class="SignUpNew-p">New to Netflix?</p>
+                <a href="index.html" class="SignUpNew-a">Sign up now.</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="SignIn-footer">
+        <div class="SignIn-footer-info pt-5">
+
+            <p class="SignIn-info-p mb-4 m-5 mt-0">Questions? Contact us.</p>
+
+            <ul class="SignIn-info-ul mb-0 mt-0 m-3 row ">
+                <li class="col-3"><a href="">FAQ</a></li>
+                <li class="col-3"><a href="">Help Center</a></li>
+                <li class="col-3"><a href="">Terms of Use</a></li>
+                <li class="col-3"><a href="">Privacy</a></li>
+                <li class="col-3"><a href="">Cookie Preferences</a></li>
+                <li class="col-3"><a href="">Corporate Information</a></li>
+        </div>
+    </footer>
+
+    <script>
+
+        function clr() {
+            document.getElementById("SignIn-email").value = "";
+            document.getElementById("SignIn-password").value = "";
+        }
+
+        console.log(person);
+
+        function SignInbtn() {
+            let SignInEmail = document.getElementById("SignIn-email").value;
+            let SignInPassowrd = document.getElementById("SignIn-password").value;
+            if (SignInEmail == "" && SignInPassowrd == "") {
+                alert('Please enter email and password');
+            }
+            else {
+                let check = person.find(obj => obj.Email == document.getElementById("SignUp-input").value);
+                if (check) {
+                    alert("LogIn");
+                }
+                else {
+                    alert("Wrong Id or Password");
+                }
+            }
+        }
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

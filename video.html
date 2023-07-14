@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/494bd90fb8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-attachment: fixed;
+        }
+
+        .logo {
+            width: 130px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        .main-body {
+            position: relative;
+        }
+
+        .head-main {
+            background-color: rgba(0, 0, 0, 0.37);
+            width: 100%;
+        }
+
+        .head-main li {
+            list-style: none;
+        }
+
+        .main-screen {
+            background-color: black;
+            width: 100%;
+            height: 940px;
+        }
+
+        .Video-nav-ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Video-nav-li {
+            margin-left: 40px;
+            margin-top: 30px;
+            color: white;
+            font-size: small;
+        }
+
+        .main-video {
+            position: absolute;
+            width: 100%;
+        }
+
+        .play-btn {
+            margin-top: 30%;
+            margin-left: 6%;
+        }
+        .v-section{
+            width: 99%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-video">
+        <video class="main-screen"
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" autoplay
+            loop></video>
+    </div>
+
+    <div class="main-body">
+
+        <div class="head-main">
+            <ul class="Video-nav-ul">
+                <li class="li-logo">
+                    <img class="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png"
+                        alt="">
+                </li>
+                <li class="Video-nav-li">Home</li>
+                <li class="Video-nav-li">TV Shows</li>
+                <li class="Video-nav-li">Movies</li>
+                <li class="Video-nav-li">New & Popular</li>
+                <li class="Video-nav-li">My List</li>
+                <li class="Video-nav-li">Browss by Language</li>
+            </ul>
+        </div>
+
+        <div class="container play-btn">
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-light btn-lg mt-0 mb-0 m-2">
+                        <i class="fa-solid fa-play mt-0 mb-0 m-2" style="color: #000000;"></i>Play</button>
+
+                    <button class="btn btn-secondary btn-lg ">
+                        <i class="fa-solid fa-circle-info mt-0 mb-0 m-2" style="color: #ffffff;"></i>More info</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="video-section">
+        <div class="v-section">
+            <div class="row">
+                <div class="col-3"><video src=""></video></div>
+                <div class="col-3"><video src=""></video></div>
+                <div class="col-3"><video src=""></video></div>
+                <div class="col-3"><video src=""></video></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
