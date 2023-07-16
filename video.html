@@ -74,6 +74,14 @@
             width: 100%;
             height: 80%;
         }
+
+        .LogOut {
+            width: 100px;
+            height: 50%;
+            position: relative;
+            margin: auto;
+            margin-left: 43%;
+        }
     </style>
 </head>
 
@@ -85,10 +93,10 @@
             loop></video>
     </div>
     <div class="G">
-        <div class="main-body">
+        <div class="main-body ">
 
-            <div class="head-main">
-                <ul class="Video-nav-ul">
+            <div class="head-main d-flex row">
+                <ul class="Video-nav-ul col-6">
                     <li class="li-logo">
                         <img class="logo"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png"
@@ -101,6 +109,7 @@
                     <li class="Video-nav-li">My List</li>
                     <li class="Video-nav-li">Browss by Language</li>
                 </ul>
+                <button class="btn btn-danger LogOut col-6" id="LogOut" onclick="LogOut()">Log Out</button>
             </div>
 
             <div class="container play-btn">
@@ -117,6 +126,7 @@
             </div>
 
         </div>
+
         <div class="v-bg">
             <div class="video-section m-5">
                 <div class="v-section">
@@ -194,6 +204,11 @@
         </div>
     </div>
 
+    <script>
+        function LogOut() {
+            window.location.href = "index.html"
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
